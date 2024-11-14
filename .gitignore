@@ -1,0 +1,10 @@
+
+# Ignore the virtual environment
+venv/
+
+# Ignore cache and compiled files
+__pycache__/
+*.pyc
+
+# Ignore other large directories as needed
+data/
