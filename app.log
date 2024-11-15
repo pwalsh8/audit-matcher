@@ -1,0 +1,495 @@
+2024-11-14 06:40:00,410 - ERROR - Error processing selection 0: 'str' object has no attribute 'name'
+2024-11-14 06:40:00,411 - ERROR - Error processing selection 1: 'str' object has no attribute 'name'
+2024-11-14 06:40:00,412 - ERROR - Error processing selection 2: 'str' object has no attribute 'name'
+2024-11-14 06:40:00,412 - ERROR - Error processing selection 3: 'str' object has no attribute 'name'
+2024-11-14 06:40:00,413 - ERROR - Error processing selection 4: 'str' object has no attribute 'name'
+2024-11-14 06:40:00,413 - ERROR - Error processing selection 5: 'str' object has no attribute 'name'
+2024-11-14 06:40:00,413 - ERROR - Error processing selection 6: 'str' object has no attribute 'name'
+2024-11-14 06:40:00,413 - ERROR - Error processing selection 7: 'str' object has no attribute 'name'
+2024-11-14 06:40:00,413 - ERROR - Error processing selection 8: 'str' object has no attribute 'name'
+2024-11-14 06:40:00,414 - ERROR - Error processing selection 9: 'str' object has no attribute 'name'
+2024-11-14 06:40:00,414 - ERROR - Error processing selection 10: 'str' object has no attribute 'name'
+2024-11-14 06:40:00,414 - ERROR - Error processing selection 11: 'str' object has no attribute 'name'
+2024-11-14 06:40:00,414 - ERROR - Error processing selection 12: 'str' object has no attribute 'name'
+2024-11-14 06:40:00,414 - ERROR - Error processing selection 13: 'str' object has no attribute 'name'
+2024-11-14 06:40:00,414 - ERROR - Error processing selection 14: 'str' object has no attribute 'name'
+2024-11-14 06:40:00,415 - ERROR - Error processing selection 15: 'str' object has no attribute 'name'
+2024-11-14 06:40:00,415 - ERROR - Error processing selection 16: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,524 - ERROR - Error processing selection 0: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,525 - ERROR - Error processing selection 1: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,526 - ERROR - Error processing selection 2: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,526 - ERROR - Error processing selection 3: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,526 - ERROR - Error processing selection 4: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,526 - ERROR - Error processing selection 5: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,526 - ERROR - Error processing selection 6: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,526 - ERROR - Error processing selection 7: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,527 - ERROR - Error processing selection 8: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,527 - ERROR - Error processing selection 9: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,527 - ERROR - Error processing selection 10: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,527 - ERROR - Error processing selection 11: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,527 - ERROR - Error processing selection 12: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,527 - ERROR - Error processing selection 13: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,528 - ERROR - Error processing selection 14: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,528 - ERROR - Error processing selection 15: 'str' object has no attribute 'name'
+2024-11-14 06:42:52,528 - ERROR - Error processing selection 16: 'str' object has no attribute 'name'
+2024-11-14 06:45:39,177 - ERROR - Error during processing: name 'extract_text_from_pdf' is not defined
+2024-11-14 06:49:00,560 - ERROR - Error processing selection 0: 'str' object has no attribute 'name'
+2024-11-14 06:49:00,560 - ERROR - Error processing selection 1: 'str' object has no attribute 'name'
+2024-11-14 06:49:00,568 - ERROR - Error processing selection 2: 'str' object has no attribute 'name'
+2024-11-14 06:49:00,569 - ERROR - Error processing selection 3: 'str' object has no attribute 'name'
+2024-11-14 06:49:00,569 - ERROR - Error processing selection 4: 'str' object has no attribute 'name'
+2024-11-14 06:49:00,569 - ERROR - Error processing selection 5: 'str' object has no attribute 'name'
+2024-11-14 06:49:00,569 - ERROR - Error processing selection 6: 'str' object has no attribute 'name'
+2024-11-14 06:49:00,569 - ERROR - Error processing selection 7: 'str' object has no attribute 'name'
+2024-11-14 06:49:00,569 - ERROR - Error processing selection 8: 'str' object has no attribute 'name'
+2024-11-14 06:49:00,569 - ERROR - Error processing selection 9: 'str' object has no attribute 'name'
+2024-11-14 06:49:00,570 - ERROR - Error processing selection 10: 'str' object has no attribute 'name'
+2024-11-14 06:49:00,570 - ERROR - Error processing selection 11: 'str' object has no attribute 'name'
+2024-11-14 06:49:00,570 - ERROR - Error processing selection 12: 'str' object has no attribute 'name'
+2024-11-14 06:49:00,570 - ERROR - Error processing selection 13: 'str' object has no attribute 'name'
+2024-11-14 06:49:00,570 - ERROR - Error processing selection 14: 'str' object has no attribute 'name'
+2024-11-14 06:49:00,570 - ERROR - Error processing selection 15: 'str' object has no attribute 'name'
+2024-11-14 06:49:00,570 - ERROR - Error processing selection 16: 'str' object has no attribute 'name'
+2024-11-14 07:06:29,841 - ERROR - Error processing selection 0: 'str' object has no attribute 'name'
+2024-11-14 07:06:29,841 - ERROR - Error processing selection 1: 'str' object has no attribute 'name'
+2024-11-14 07:06:29,842 - ERROR - Error processing selection 2: 'str' object has no attribute 'name'
+2024-11-14 07:11:43,098 - ERROR - Error processing selection 0: 'str' object has no attribute 'name'
+2024-11-14 07:11:43,100 - ERROR - Error processing selection 1: 'str' object has no attribute 'name'
+2024-11-14 07:11:43,101 - ERROR - Error processing selection 2: 'str' object has no attribute 'name'
+2024-11-14 07:13:12,261 - ERROR - Error processing selection 0: 'str' object has no attribute 'name'
+2024-11-14 07:13:12,262 - ERROR - Error processing selection 1: 'str' object has no attribute 'name'
+2024-11-14 07:13:12,263 - ERROR - Error processing selection 2: 'str' object has no attribute 'name'
+2024-11-14 07:15:59,809 - ERROR - Error processing selection 0: 'str' object has no attribute 'name'
+2024-11-14 07:15:59,809 - ERROR - Error processing selection 1: 'str' object has no attribute 'name'
+2024-11-14 07:15:59,821 - ERROR - Error processing selection 2: 'str' object has no attribute 'name'
+2024-11-14 07:22:48,948 - ERROR - Error processing selection 0: 'str' object has no attribute 'name'
+2024-11-14 07:22:48,948 - ERROR - Error processing selection 1: 'str' object has no attribute 'name'
+2024-11-14 07:22:48,958 - ERROR - Error processing selection 2: 'str' object has no attribute 'name'
+2024-11-14 07:32:31,307 - ERROR - Error processing selection 0: 'str' object has no attribute 'name'
+2024-11-14 07:32:31,308 - ERROR - Error processing selection 1: 'str' object has no attribute 'name'
+2024-11-14 07:32:31,309 - ERROR - Error processing selection 2: 'str' object has no attribute 'name'
+2024-11-14 07:37:00,621 - ERROR - Error processing selection 0: 'str' object has no attribute 'name'
+2024-11-14 07:37:00,623 - ERROR - Error processing selection 1: 'str' object has no attribute 'name'
+2024-11-14 07:37:00,623 - ERROR - Error processing selection 2: 'str' object has no attribute 'name'
+2024-11-14 07:39:41,216 - ERROR - Error processing selection 0: name 'unique_id_column' is not defined
+2024-11-14 07:39:41,218 - ERROR - Error processing selection 1: name 'unique_id_column' is not defined
+2024-11-14 07:39:41,218 - ERROR - Error processing selection 2: name 'unique_id_column' is not defined
+2024-11-14 08:06:06,655 - ERROR - An error occurred during matching: match_documents() takes 3 positional arguments but 4 were given
+2024-11-14 08:10:52,304 - ERROR - An error occurred during matching: 'Selection Data'
+2024-11-14 08:19:43,565 - ERROR - An error occurred during matching: 'Matched Pages'
+2024-11-14 08:39:34,150 - ERROR - Error processing PDF Invoice Test 46.pdf: name 'tempfile' is not defined
+2024-11-14 08:39:34,793 - ERROR - Error processing PDF Invoice Test 73.pdf: name 'tempfile' is not defined
+2024-11-14 08:39:35,407 - ERROR - Error processing PDF Invoice Test 117.pdf: name 'tempfile' is not defined
+2024-11-14 08:45:28,392 - ERROR - Error processing PDF Invoice Test 46.pdf: name 'tempfile' is not defined
+2024-11-14 08:45:29,021 - ERROR - Error processing PDF Invoice Test 73.pdf: name 'tempfile' is not defined
+2024-11-14 08:45:29,627 - ERROR - Error processing PDF Invoice Test 117.pdf: name 'tempfile' is not defined
+2024-11-14 09:03:53,818 - ERROR - Error processing PDF Invoice Test 46.pdf: name 'tempfile' is not defined
+2024-11-14 09:03:54,194 - ERROR - Error processing PDF Invoice Test 73.pdf: name 'tempfile' is not defined
+2024-11-14 09:03:54,650 - ERROR - Error processing PDF Invoice Test 117.pdf: name 'tempfile' is not defined
+2024-11-14 09:08:26,252 - ERROR - Error processing PDF Invoice Test 46.pdf: name 'tempfile' is not defined
+2024-11-14 09:08:26,582 - ERROR - Error processing PDF Invoice Test 73.pdf: name 'tempfile' is not defined
+2024-11-14 09:08:26,959 - ERROR - Error processing PDF Invoice Test 117.pdf: name 'tempfile' is not defined
+2024-11-14 09:19:52,452 - ERROR - An error occurred during matching: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\AppData\\Local\\Temp\\tmpijot5z9t\\1.0_page_1.png'
+2024-11-14 09:24:16,380 - ERROR - An error occurred during matching: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\AppData\\Local\\Temp\\tmplhh451hn\\1.0_page_1.png'
+2024-11-14 09:26:52,346 - ERROR - An error occurred during matching: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\AppData\\Local\\Temp\\tmp_ttr9yob\\1.0_page_1.png'
+2024-11-14 09:35:17,815 - ERROR - Error processing PDF Invoice Test 46.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 09:35:18,129 - ERROR - Error processing PDF Invoice Test 73.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 09:35:18,506 - ERROR - Error processing PDF Invoice Test 117.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 09:46:27,369 - ERROR - Error processing PDF Invoice Test 46.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 09:46:27,698 - ERROR - Error processing PDF Invoice Test 73.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 09:46:28,112 - ERROR - Error processing PDF Invoice Test 117.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 10:29:04,614 - ERROR - An error occurred during matching: At least one sheet must be visible
+2024-11-14 10:38:01,210 - ERROR - Error processing PDF Invoice Test 46.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 10:38:01,528 - ERROR - Error processing PDF Invoice Test 73.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 10:38:01,946 - ERROR - Error processing PDF Invoice Test 117.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 10:46:00,864 - ERROR - Error processing PDF Invoice Test 46.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 10:46:01,198 - ERROR - Error processing PDF Invoice Test 73.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 10:46:01,298 - ERROR - Error processing PDF Invoice Test 117.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 10:46:01,392 - ERROR - Error processing PDF Invoice Test 46.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 10:46:01,628 - ERROR - Error processing PDF Invoice Test 117.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 10:46:01,644 - INFO - Found 0 total matches
+2024-11-14 11:17:19,154 - ERROR - Error processing PDF Invoice Test 46.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:17:19,499 - ERROR - Error processing PDF Invoice Test 73.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:17:19,594 - ERROR - Error processing PDF Invoice Test 117.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:17:19,688 - ERROR - Error processing PDF Invoice Test 46.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:17:19,879 - ERROR - Error processing PDF Invoice Test 117.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:17:19,879 - INFO - Found 0 total matches
+2024-11-14 11:24:51,412 - ERROR - Error processing PDF Invoice Test 46.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:24:51,494 - ERROR - Error processing PDF Invoice Test 73.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:24:51,588 - ERROR - Error processing PDF Invoice Test 117.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:24:52,209 - INFO - Found 0 total matches
+2024-11-14 11:27:52,471 - ERROR - Error processing PDF Invoice Test 46.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:27:52,736 - ERROR - Error processing PDF Invoice Test 46.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:27:52,829 - ERROR - Error processing PDF Invoice Test 73.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:27:52,918 - ERROR - Error processing PDF Invoice Test 117.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:27:53,007 - ERROR - Error processing PDF Invoice Test 46.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:27:53,257 - ERROR - Error processing PDF Invoice Test 117.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:27:53,257 - INFO - Found 0 total matches
+2024-11-14 11:36:01,870 - ERROR - Error processing PDF Invoice Test 46.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:36:02,150 - ERROR - Error processing PDF Invoice Test 46.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:36:02,236 - ERROR - Error processing PDF Invoice Test 73.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:36:02,317 - ERROR - Error processing PDF Invoice Test 117.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:36:02,421 - ERROR - Error processing PDF Invoice Test 46.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:36:02,655 - ERROR - Error processing PDF Invoice Test 117.pdf: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:36:02,655 - INFO - Found 0 total matches
+2024-11-14 11:51:19,416 - ERROR - Error processing files: expected str, bytes or os.PathLike object, not UploadedFile
+2024-11-14 11:53:00,217 - ERROR - Error extracting text from PDF: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Pat\\AppData\\Local\\Temp\\tmph_fvfyly.pdf'
+2024-11-14 11:53:00,218 - WARNING - No text extracted from Invoice Test 46.pdf
+2024-11-14 11:53:00,316 - ERROR - Error extracting text from PDF: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Pat\\AppData\\Local\\Temp\\tmpj3kl4vye.pdf'
+2024-11-14 11:53:00,316 - WARNING - No text extracted from Invoice Test 73.pdf
+2024-11-14 11:53:00,412 - ERROR - Error extracting text from PDF: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Pat\\AppData\\Local\\Temp\\tmplw51hq5h.pdf'
+2024-11-14 11:53:00,413 - WARNING - No text extracted from Invoice Test 117.pdf
+2024-11-14 11:53:00,413 - INFO - Found 0 total matches
+2024-11-14 11:56:34,948 - ERROR - Error extracting text from PDF: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Pat\\AppData\\Local\\Temp\\tmp_ari6cl_.pdf'
+2024-11-14 11:56:34,948 - WARNING - No text extracted from Invoice Test 46.pdf
+2024-11-14 11:56:35,042 - ERROR - Error extracting text from PDF: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Pat\\AppData\\Local\\Temp\\tmpm97w6fz0.pdf'
+2024-11-14 11:56:35,043 - WARNING - No text extracted from Invoice Test 73.pdf
+2024-11-14 11:56:35,149 - ERROR - Error extracting text from PDF: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Pat\\AppData\\Local\\Temp\\tmp6zctohei.pdf'
+2024-11-14 11:56:35,149 - WARNING - No text extracted from Invoice Test 117.pdf
+2024-11-14 11:56:35,149 - INFO - Found 0 total matches
+2024-11-14 12:01:23,382 - ERROR - Error loading Excel file: There are multiple `selectbox` elements with the same auto-generated ID. When this element is created, it is assigned an internal ID based on the element type and provided parameters. Multiple elements with the same type and parameters will cause this error.
+
+To fix this error, please pass a unique `key` argument to the `selectbox` element.
+2024-11-14 12:03:05,683 - ERROR - Error extracting text from PDF: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Pat\\AppData\\Local\\Temp\\tmpp5lpyxxi.pdf'
+2024-11-14 12:03:05,683 - WARNING - No text extracted from Invoice Test 46.pdf
+2024-11-14 12:03:05,767 - ERROR - Error extracting text from PDF: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Pat\\AppData\\Local\\Temp\\tmpsyalnb0a.pdf'
+2024-11-14 12:03:05,767 - WARNING - No text extracted from Invoice Test 73.pdf
+2024-11-14 12:03:05,866 - ERROR - Error extracting text from PDF: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Pat\\AppData\\Local\\Temp\\tmp7ttby8er.pdf'
+2024-11-14 12:03:05,866 - WARNING - No text extracted from Invoice Test 117.pdf
+2024-11-14 12:03:05,866 - ERROR - Error processing files: 'NoneType' object is not iterable
+2024-11-14 12:09:00,607 - ERROR - Error extracting text from PDF: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Pat\\AppData\\Local\\Temp\\tmpk5whiclu.pdf'
+2024-11-14 12:09:00,607 - WARNING - No text extracted from Invoice Test 46.pdf
+2024-11-14 12:09:00,686 - ERROR - Error extracting text from PDF: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Pat\\AppData\\Local\\Temp\\tmp5tfuqycn.pdf'
+2024-11-14 12:09:00,686 - WARNING - No text extracted from Invoice Test 73.pdf
+2024-11-14 12:09:00,791 - ERROR - Error extracting text from PDF: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Pat\\AppData\\Local\\Temp\\tmp6nt611rt.pdf'
+2024-11-14 12:09:00,791 - WARNING - No text extracted from Invoice Test 117.pdf
+2024-11-14 12:09:00,791 - INFO - Found 0 total matches
+2024-11-14 18:30:03,472 - INFO - Found 3 total matches
+2024-11-14 18:30:04,020 - ERROR - Error saving Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_page_1_resized.png'
+2024-11-14 18:30:04,020 - ERROR - Error processing files: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_page_1_resized.png'
+2024-11-14 18:44:56,856 - INFO - Found 3 total matches
+2024-11-14 18:44:57,366 - ERROR - Error saving Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1.0_page_1_resized.png'
+2024-11-14 18:44:57,366 - ERROR - Error processing files: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1.0_page_1_resized.png'
+2024-11-14 18:48:36,043 - INFO - Found 3 total matches
+2024-11-14 18:48:36,539 - ERROR - Error saving Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1.0_page_1_resized.png'
+2024-11-14 18:48:36,539 - ERROR - Error processing files: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1.0_page_1_resized.png'
+2024-11-14 18:48:38,769 - INFO - Found 3 total matches
+2024-11-14 18:48:39,268 - ERROR - Error saving Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1.0_page_1_resized.png'
+2024-11-14 18:48:39,268 - ERROR - Error processing files: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1.0_page_1_resized.png'
+2024-11-14 19:20:07,563 - INFO - Found 0 total matches
+2024-11-14 19:22:26,255 - INFO - Loaded Excel with 3 rows
+2024-11-14 19:24:17,477 - INFO - Loaded Excel with 3 rows
+2024-11-14 19:24:17,509 - ERROR - Error loading Excel file: conversion from numpy.int64 to Decimal is not supported
+2024-11-14 19:30:19,509 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1.0_page_1.png
+2024-11-14 19:30:19,860 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2.0_page_1.png
+2024-11-14 19:30:20,220 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3.0_page_1.png
+2024-11-14 19:30:20,220 - INFO - Found 3 total matches
+2024-11-14 19:30:20,356 - INFO - Saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1.0_page_1_resized.png
+2024-11-14 19:30:20,510 - INFO - Saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2.0_page_1_resized.png
+2024-11-14 19:30:20,659 - INFO - Saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3.0_page_1_resized.png
+2024-11-14 19:30:20,725 - ERROR - Error saving Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1.0_page_1_resized.png'
+2024-11-14 19:30:20,725 - ERROR - Error processing files: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1.0_page_1_resized.png'
+2024-11-14 19:31:42,048 - INFO - Found 0 total matches
+2024-11-14 19:31:47,967 - INFO - Found 0 total matches
+2024-11-14 19:33:37,107 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 19:33:37,425 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 19:33:37,778 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 19:33:37,778 - INFO - Found 3 total matches
+2024-11-14 19:33:37,915 - INFO - Saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 19:33:38,064 - INFO - Saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 19:33:38,210 - INFO - Saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 19:33:38,279 - ERROR - Error saving Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 19:33:38,279 - ERROR - Error processing files: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 19:35:52,624 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 19:35:53,071 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 19:35:53,446 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 19:35:53,450 - INFO - Found 3 total matches
+2024-11-14 19:35:53,598 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 19:35:53,756 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 19:35:53,909 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 19:35:53,982 - ERROR - Error loading Excel file: 'match'
+2024-11-14 19:44:25,790 - INFO - Found 0 matches
+2024-11-14 19:48:17,121 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 19:48:17,457 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 19:48:17,947 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 19:48:17,947 - INFO - Found 3 matches
+2024-11-14 19:48:18,088 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 19:48:18,251 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 19:48:18,411 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 19:48:44,917 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 19:48:45,383 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 19:48:45,757 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 19:48:45,759 - INFO - Found 3 matches
+2024-11-14 19:48:45,898 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 19:48:46,054 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 19:48:46,201 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 19:49:38,166 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 19:49:38,527 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 19:49:38,896 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 19:49:38,896 - INFO - Found 3 matches
+2024-11-14 19:49:39,032 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 19:49:39,174 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 19:49:39,327 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 19:51:40,362 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 19:51:40,362 - INFO - Found match for selection 1_0
+2024-11-14 19:51:40,722 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 19:51:40,722 - INFO - Found match for selection 2_0
+2024-11-14 19:51:41,075 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 19:51:41,075 - INFO - Found match for selection 3_0
+2024-11-14 19:51:41,075 - INFO - Found 3 total matches
+2024-11-14 19:51:41,211 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 19:51:41,374 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 19:51:41,521 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 19:51:41,595 - INFO - Successfully saved matches to matching_results.xlsx
+2024-11-14 19:54:46,919 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 19:54:46,919 - INFO - Found match for selection 1_0
+2024-11-14 19:54:47,381 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 19:54:47,381 - INFO - Found match for selection 2_0
+2024-11-14 19:54:47,734 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 19:54:47,734 - INFO - Found match for selection 3_0
+2024-11-14 19:54:47,734 - INFO - Found 3 total matches
+2024-11-14 19:54:47,875 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 19:54:48,012 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 19:54:48,165 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 19:54:48,212 - INFO - Successfully saved matches to matching_results.xlsx
+2024-11-14 19:57:48,777 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 19:57:48,777 - INFO - Found match for selection 1_0
+2024-11-14 19:57:49,096 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 19:57:49,112 - INFO - Found match for selection 2_0
+2024-11-14 19:57:49,546 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 19:57:49,546 - INFO - Found match for selection 3_0
+2024-11-14 19:57:49,546 - INFO - Found 3 total matches
+2024-11-14 19:57:49,695 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 19:57:49,825 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 19:57:49,993 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 19:57:50,024 - INFO - Successfully saved matches to matching_results.xlsx
+2024-11-14 20:17:27,331 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 20:17:27,331 - INFO - Found match for selection 1_0
+2024-11-14 20:17:27,730 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 20:17:27,730 - INFO - Found match for selection 2_0
+2024-11-14 20:17:28,115 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 20:17:28,118 - INFO - Found match for selection 3_0
+2024-11-14 20:17:28,118 - INFO - Found 3 total matches
+2024-11-14 20:17:28,119 - INFO - Found 3 potential matches
+2024-11-14 20:17:56,271 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 20:17:56,422 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 20:17:56,571 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 20:17:56,637 - INFO - Successfully saved matches to matching_results.xlsx
+2024-11-14 20:20:49,102 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 20:20:49,102 - INFO - Found match for selection 1_0
+2024-11-14 20:20:49,467 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 20:20:49,467 - INFO - Found match for selection 2_0
+2024-11-14 20:20:49,828 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 20:20:49,844 - INFO - Found match for selection 3_0
+2024-11-14 20:20:49,844 - INFO - Found 3 total matches
+2024-11-14 20:20:49,844 - INFO - Found 3 potential matches
+2024-11-14 20:21:06,244 - INFO - Excel file saved successfully to matching_results.xlsx
+2024-11-14 20:21:13,170 - INFO - Excel file saved successfully to matching_results.xlsx
+2024-11-14 20:26:38,809 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 20:26:38,812 - INFO - Found match for selection 1_0
+2024-11-14 20:26:39,174 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 20:26:39,175 - INFO - Found match for selection 2_0
+2024-11-14 20:26:39,521 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 20:26:39,537 - INFO - Found match for selection 3_0
+2024-11-14 20:26:39,537 - INFO - Found 3 total matches
+2024-11-14 20:26:39,537 - INFO - Found 3 potential matches
+2024-11-14 20:26:54,953 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 20:26:55,100 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 20:26:55,246 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 20:26:55,318 - ERROR - Error creating Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:26:55,318 - ERROR - Error preparing Excel download: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:33:40,044 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 20:33:40,059 - INFO - Found match for selection 1_0
+2024-11-14 20:33:40,430 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 20:33:40,430 - INFO - Found match for selection 2_0
+2024-11-14 20:33:40,813 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 20:33:40,815 - INFO - Found match for selection 3_0
+2024-11-14 20:33:40,815 - INFO - Found 3 total matches
+2024-11-14 20:33:40,816 - INFO - Found 3 potential matches
+2024-11-14 20:33:50,623 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 20:33:50,771 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 20:33:50,918 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 20:33:50,968 - ERROR - Error creating Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:33:50,968 - ERROR - Error preparing Excel download: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:40:57,191 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 20:40:57,201 - INFO - Found match for selection 1_0
+2024-11-14 20:40:57,541 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 20:40:57,541 - INFO - Found match for selection 2_0
+2024-11-14 20:40:57,915 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 20:40:57,917 - INFO - Found match for selection 3_0
+2024-11-14 20:40:57,918 - INFO - Found 3 total matches
+2024-11-14 20:40:57,918 - INFO - Found 3 potential matches
+2024-11-14 20:41:08,960 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 20:41:09,104 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 20:41:09,254 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 20:41:09,305 - ERROR - Error creating Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:41:09,306 - ERROR - Error preparing Excel download: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:41:54,308 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 20:41:54,475 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 20:41:54,640 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 20:41:54,690 - ERROR - Error creating Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:41:54,690 - ERROR - Error preparing Excel download: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:41:56,422 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 20:41:56,607 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 20:41:56,790 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 20:41:56,855 - ERROR - Error creating Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:41:56,855 - ERROR - Error preparing Excel download: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:41:58,424 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 20:41:58,441 - INFO - Found match for selection 1_0
+2024-11-14 20:41:58,881 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 20:41:58,883 - INFO - Found match for selection 2_0
+2024-11-14 20:41:59,414 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 20:41:59,416 - INFO - Found match for selection 3_0
+2024-11-14 20:41:59,416 - INFO - Found 3 total matches
+2024-11-14 20:41:59,416 - INFO - Found 3 potential matches
+2024-11-14 20:42:20,366 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 20:42:20,532 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 20:42:20,705 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 20:42:20,748 - ERROR - Error creating Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:42:20,748 - ERROR - Error preparing Excel download: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:42:28,403 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 20:42:28,561 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 20:42:28,726 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 20:42:28,773 - ERROR - Error creating Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:42:28,773 - ERROR - Error preparing Excel download: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:42:31,578 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 20:42:31,745 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 20:42:31,946 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 20:42:32,012 - ERROR - Error creating Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:42:32,012 - ERROR - Error preparing Excel download: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:42:33,511 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 20:42:33,514 - INFO - Found match for selection 1_0
+2024-11-14 20:42:33,904 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 20:42:33,906 - INFO - Found match for selection 2_0
+2024-11-14 20:42:34,258 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 20:42:34,273 - INFO - Found match for selection 3_0
+2024-11-14 20:42:34,273 - INFO - Found 3 total matches
+2024-11-14 20:42:34,273 - INFO - Found 3 potential matches
+2024-11-14 20:42:44,692 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 20:42:44,842 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 20:42:45,021 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 20:42:45,057 - ERROR - Error creating Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:42:45,057 - ERROR - Error preparing Excel download: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:42:50,007 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 20:42:50,152 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 20:42:50,317 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 20:42:50,368 - ERROR - Error creating Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:42:50,369 - ERROR - Error preparing Excel download: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:53:33,722 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 20:53:33,739 - INFO - Found match for selection 1_0
+2024-11-14 20:53:34,206 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 20:53:34,206 - INFO - Found match for selection 2_0
+2024-11-14 20:53:34,567 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 20:53:34,567 - INFO - Found match for selection 3_0
+2024-11-14 20:53:34,567 - INFO - Found 3 total matches
+2024-11-14 20:53:34,567 - INFO - Found 3 potential matches
+2024-11-14 20:53:46,352 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 20:53:46,500 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 20:53:46,651 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 20:53:46,687 - ERROR - Error creating Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 20:53:46,687 - ERROR - Error preparing Excel download: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 21:45:02,574 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 21:45:02,574 - INFO - Found match for selection 1_0
+2024-11-14 21:45:02,951 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 21:45:02,951 - INFO - Found match for selection 2_0
+2024-11-14 21:45:03,406 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 21:45:03,406 - INFO - Found match for selection 3_0
+2024-11-14 21:45:03,406 - INFO - Found 3 total matches
+2024-11-14 21:45:03,406 - INFO - Found 3 potential matches
+2024-11-14 21:45:16,558 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 21:45:16,716 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 21:45:16,872 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 21:45:16,951 - ERROR - Error creating Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 21:45:16,951 - ERROR - Error preparing Excel download: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 21:55:40,840 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 21:55:40,845 - INFO - Found match for selection 1_0
+2024-11-14 21:55:41,301 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 21:55:41,301 - INFO - Found match for selection 2_0
+2024-11-14 21:55:41,678 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 21:55:41,678 - INFO - Found match for selection 3_0
+2024-11-14 21:55:41,678 - INFO - Found 3 total matches
+2024-11-14 21:55:41,678 - INFO - Found 3 potential matches
+2024-11-14 21:55:56,047 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 21:55:56,198 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 21:55:56,361 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 21:55:56,402 - ERROR - Error creating Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 21:55:56,402 - ERROR - Error preparing Excel download: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 21:56:10,264 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 21:56:10,425 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 21:56:10,562 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 21:56:10,611 - ERROR - Error creating Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 21:56:10,611 - ERROR - Error preparing Excel download: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 21:58:20,559 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-14 21:58:20,559 - INFO - Found match for selection 1_0
+2024-11-14 21:58:21,030 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-14 21:58:21,030 - INFO - Found match for selection 2_0
+2024-11-14 21:58:21,379 - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-14 21:58:21,379 - INFO - Found match for selection 3_0
+2024-11-14 21:58:21,379 - INFO - Found 3 total matches
+2024-11-14 21:58:21,392 - INFO - Found 3 potential matches
+2024-11-14 21:58:29,361 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-14 21:58:29,521 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-14 21:58:29,660 - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-14 21:58:29,707 - ERROR - Error creating Excel file: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 21:58:29,707 - ERROR - Error preparing Excel download: [Errno 2] No such file or directory: 'C:\\Users\\Pat\\OneDrive\\Documents\\GitHub\\audit-matcher\\output_images\\1_0_page_1_resized.png'
+2024-11-14 22:01:34,631 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 22:01:34,631 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 22:01:34,631 - INFO - Found match for selection 1_0
+2024-11-14 22:01:34,631 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 22:01:34,631 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 22:01:34,631 - INFO - Found match for selection 2_0
+2024-11-14 22:01:34,631 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 22:01:34,631 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 22:01:34,631 - INFO - Found match for selection 3_0
+2024-11-14 22:01:34,631 - INFO - Found 3 total matches
+2024-11-14 22:01:34,631 - ERROR - Interactive matching error: list indices must be integers or slices, not str
+2024-11-14 22:06:11,906 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 22:06:11,906 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 22:06:11,906 - INFO - Found match for selection 1_0
+2024-11-14 22:06:11,906 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 22:06:11,906 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 22:06:11,906 - INFO - Found match for selection 2_0
+2024-11-14 22:06:11,906 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 22:06:11,906 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 22:06:11,906 - INFO - Found match for selection 3_0
+2024-11-14 22:06:11,906 - INFO - Found 3 total matches
+2024-11-14 22:13:13,366 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 22:13:13,366 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 22:13:13,366 - INFO - Found match for selection 1_0
+2024-11-14 22:13:13,366 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 22:13:13,366 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 22:13:13,366 - INFO - Found match for selection 2_0
+2024-11-14 22:13:13,366 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 22:13:13,366 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 22:13:13,366 - INFO - Found match for selection 3_0
+2024-11-14 22:13:13,366 - INFO - Found 3 total matches
+2024-11-14 22:21:21,968 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 22:21:21,975 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 22:21:21,975 - INFO - Found match for selection 1_0
+2024-11-14 22:21:21,975 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 22:21:21,975 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 22:21:21,975 - INFO - Found match for selection 2_0
+2024-11-14 22:21:21,975 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 22:21:21,975 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 22:21:21,975 - INFO - Found match for selection 3_0
+2024-11-14 22:21:21,975 - INFO - Found 3 total matches
+2024-11-14 22:38:54,960 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 22:38:54,960 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 22:38:54,960 - INFO - Found match for selection 1_0
+2024-11-14 22:38:54,960 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 22:38:54,960 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 22:38:54,960 - INFO - Found match for selection 2_0
+2024-11-14 22:38:54,960 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 22:38:54,975 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 22:38:54,975 - INFO - Found match for selection 3_0
+2024-11-14 22:38:54,975 - INFO - Found 3 total matches
+2024-11-14 23:06:02,234 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 23:06:02,234 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 23:06:02,234 - INFO - Found match for selection 1_0
+2024-11-14 23:06:02,234 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 23:06:02,234 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 23:06:02,234 - INFO - Found match for selection 2_0
+2024-11-14 23:06:02,234 - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-14 23:06:02,234 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-14 23:06:02,234 - INFO - Found match for selection 3_0
+2024-11-14 23:06:02,234 - INFO - Found 3 total matches
