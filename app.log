@@ -493,3 +493,149 @@ To fix this error, please pass a unique `key` argument to the `selectbox` elemen
 2024-11-14 23:06:02,234 - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
 2024-11-14 23:06:02,234 - INFO - Found match for selection 3_0
 2024-11-14 23:06:02,234 - INFO - Found 3 total matches
+2024-11-15 17:11:55 - matcher - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-15 17:11:55 - matcher - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-15 17:11:55 - matcher - INFO - Found match for selection 1_0
+2024-11-15 17:11:55 - matcher - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-15 17:11:55 - matcher - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-15 17:11:55 - matcher - INFO - Found match for selection 2_0
+2024-11-15 17:11:55 - matcher - ERROR - Error converting PDF to images: 'PDFHandler' object has no attribute 'get_file_path'
+2024-11-15 17:11:55 - matcher - ERROR - Error cleaning up temp file: cannot access local variable 'file_path' where it is not associated with a value
+2024-11-15 17:11:55 - matcher - INFO - Found match for selection 3_0
+2024-11-15 17:11:55 - matcher - INFO - Found 3 total matches
+2024-11-15 18:41:47 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-15 18:41:47 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-15 18:41:47 - matcher - INFO - Found match for selection 1.0
+2024-11-15 18:41:48 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-15 18:41:48 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-15 18:41:48 - matcher - INFO - Found match for selection 2.0
+2024-11-15 18:41:49 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-15 18:41:49 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-15 18:41:49 - matcher - INFO - Found match for selection 3.0
+2024-11-15 18:41:50 - matcher - INFO - Found 3 total matches
+2024-11-15 18:41:50 - __main__ - ERROR - Error processing matched files: 'str' object has no attribute 'name'
+2024-11-15 18:45:32 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-15 18:45:33 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-15 18:45:33 - matcher - INFO - Found match for selection 1.0
+2024-11-15 18:45:33 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-15 18:45:33 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-15 18:45:33 - matcher - INFO - Found match for selection 2.0
+2024-11-15 18:45:34 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-15 18:45:34 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-15 18:45:34 - matcher - INFO - Found match for selection 3.0
+2024-11-15 18:45:34 - matcher - INFO - Found 3 total matches
+2024-11-15 18:45:34 - __main__ - ERROR - Error processing matched files: 'str' object has no attribute 'name'
+2024-11-15 18:47:41 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-15 18:47:41 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-15 18:47:41 - matcher - INFO - Found match for selection 1.0
+2024-11-15 18:47:42 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-15 18:47:42 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-15 18:47:42 - matcher - INFO - Found match for selection 2.0
+2024-11-15 18:47:42 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-15 18:47:43 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-15 18:47:43 - matcher - INFO - Found match for selection 3.0
+2024-11-15 18:47:43 - matcher - INFO - Found 3 total matches
+2024-11-15 18:50:38 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-15 18:50:38 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-15 18:50:38 - matcher - INFO - Found match for selection 1.0
+2024-11-15 18:50:38 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-15 18:50:39 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-15 18:50:39 - matcher - INFO - Found match for selection 2.0
+2024-11-15 18:50:39 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-15 18:50:39 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-15 18:50:39 - matcher - INFO - Found match for selection 3.0
+2024-11-15 18:50:40 - matcher - INFO - Found 3 total matches
+2024-11-15 18:53:09 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-15 18:53:09 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-15 18:53:09 - matcher - INFO - Found match for selection 1.0
+2024-11-15 18:53:09 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-15 18:53:10 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-15 18:53:10 - matcher - INFO - Found match for selection 2.0
+2024-11-15 18:53:10 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-15 18:53:10 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-15 18:53:10 - matcher - INFO - Found match for selection 3.0
+2024-11-15 18:53:11 - matcher - INFO - Found 3 total matches
+2024-11-15 18:59:05 - utils - ERROR - Error processing files
+2024-11-15 18:59:05 - utils - ERROR - Exception details: Invalid amounts found in rows: [3]
+Traceback (most recent call last):
+  File "C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\src\matcher.py", line 455, in process_files
+    raise ValueError(f"Invalid amounts found in rows: {invalid_rows}")
+ValueError: Invalid amounts found in rows: [3]
+2024-11-15 18:59:06 - utils - ERROR - Error processing files
+2024-11-15 18:59:06 - utils - ERROR - Exception details: Invalid amounts found in rows: [3]
+Traceback (most recent call last):
+  File "C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\src\matcher.py", line 455, in process_files
+    raise ValueError(f"Invalid amounts found in rows: {invalid_rows}")
+ValueError: Invalid amounts found in rows: [3]
+2024-11-15 18:59:07 - utils - ERROR - Error processing files
+2024-11-15 18:59:07 - utils - ERROR - Exception details: Invalid amounts found in rows: [3]
+Traceback (most recent call last):
+  File "C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\src\matcher.py", line 455, in process_files
+    raise ValueError(f"Invalid amounts found in rows: {invalid_rows}")
+ValueError: Invalid amounts found in rows: [3]
+2024-11-15 19:10:23 - utils - ERROR - Error processing files
+2024-11-15 19:10:23 - utils - ERROR - Exception details: Invalid amounts found in rows: [3]
+Traceback (most recent call last):
+  File "C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\src\matcher.py", line 455, in process_files
+    raise ValueError(f"Invalid amounts found in rows: {invalid_rows}")
+ValueError: Invalid amounts found in rows: [3]
+2024-11-15 19:10:50 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-15 19:10:50 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-15 19:10:50 - matcher - INFO - Found match for selection 1.0
+2024-11-15 19:10:50 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-15 19:10:50 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-15 19:10:51 - matcher - INFO - Found match for selection 2.0
+2024-11-15 19:10:51 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-15 19:10:51 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-15 19:10:51 - matcher - INFO - Found match for selection 3.0
+2024-11-15 19:10:52 - matcher - INFO - Found 3 total matches
+2024-11-15 19:10:52 - __main__ - ERROR - Error processing matched files: 'str' object has no attribute 'name'
+2024-11-15 19:12:50 - utils - ERROR - Error processing files
+2024-11-15 19:12:50 - utils - ERROR - Exception details: Invalid amounts found in rows: [3]
+Traceback (most recent call last):
+  File "C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\src\matcher.py", line 455, in process_files
+    raise ValueError(f"Invalid amounts found in rows: {invalid_rows}")
+ValueError: Invalid amounts found in rows: [3]
+2024-11-15 19:13:04 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-15 19:13:04 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-15 19:13:04 - matcher - INFO - Found match for selection 1.0
+2024-11-15 19:13:05 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-15 19:13:05 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-15 19:13:05 - matcher - INFO - Found match for selection 2.0
+2024-11-15 19:13:06 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-15 19:13:06 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-15 19:13:06 - matcher - INFO - Found match for selection 3.0
+2024-11-15 19:13:06 - matcher - INFO - Found 3 total matches
+2024-11-15 19:13:06 - __main__ - ERROR - Error processing matched files: 'str' object has no attribute 'name'
+2024-11-15 19:13:46 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-15 19:13:46 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-15 19:13:46 - matcher - INFO - Found match for selection 1.0
+2024-11-15 19:13:47 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-15 19:13:47 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-15 19:13:47 - matcher - INFO - Found match for selection 2.0
+2024-11-15 19:13:48 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-15 19:13:48 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-15 19:13:48 - matcher - INFO - Found match for selection 3.0
+2024-11-15 19:13:48 - matcher - INFO - Found 3 total matches
+2024-11-15 19:13:48 - __main__ - ERROR - Error processing matched files: 'str' object has no attribute 'name'
+2024-11-15 19:13:48 - utils - ERROR - Error processing files
+2024-11-15 19:13:48 - utils - ERROR - Exception details: Invalid amounts found in rows: [3]
+Traceback (most recent call last):
+  File "C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\src\matcher.py", line 455, in process_files
+    raise ValueError(f"Invalid amounts found in rows: {invalid_rows}")
+ValueError: Invalid amounts found in rows: [3]
+2024-11-15 19:17:27 - matcher - INFO - Found 3 potential matches
+2024-11-15 19:17:46 - matcher - INFO - Found 3 potential matches
+2024-11-15 19:17:54 - matcher - INFO - Found 3 potential matches
+2024-11-15 19:22:21 - matcher - INFO - Found 3 potential matches
+2024-11-15 19:22:32 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1.png
+2024-11-15 19:22:32 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\1_0_page_1_resized.png
+2024-11-15 19:22:32 - matcher - INFO - Found match for selection 1.0
+2024-11-15 19:22:32 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1.png
+2024-11-15 19:22:33 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\2_0_page_1_resized.png
+2024-11-15 19:22:33 - matcher - INFO - Found match for selection 2.0
+2024-11-15 19:22:33 - utils - INFO - Saved PDF page 1 to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1.png
+2024-11-15 19:22:33 - utils - INFO - Successfully saved resized image to: C:\Users\Pat\OneDrive\Documents\00 - INSTANTEDGE\GitHub\audit-matcher\output_images\3_0_page_1_resized.png
+2024-11-15 19:22:33 - matcher - INFO - Found match for selection 3.0
+2024-11-15 19:22:34 - matcher - INFO - Found 3 total matches
+2024-11-15 19:22:34 - __main__ - ERROR - Error processing matched files: 'str' object has no attribute 'name'

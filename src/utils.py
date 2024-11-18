@@ -20,6 +20,7 @@ import tempfile
 import os
 import shutil
 import time
+from constants import SUPPORT_CATEGORIES, OUTPUT_FOLDER, EXCEL_HEADERS
 
 # Configure logging
 logging.basicConfig(
@@ -48,43 +49,31 @@ def ensure_output_directory() -> Path:
     return output_dir.resolve()
 
 def load_and_validate_excel(file_path: Union[str, Path, st.runtime.uploaded_file_manager.UploadedFile]) -> Optional[pd.DataFrame]:
-    """
-    Load and validate an Excel file containing audit selections.
-    """
+    """Load and validate an Excel file containing audit selections."""
     try:
-        # Read Excel with basic numeric handling
-        df = pd.read_excel(
-            file_path,
-            dtype={
-                'ID': str,  # Force ID column to string to preserve leading zeros
-                'Amount': float  # Force amount column to float
-            }
-        )
+        df = pd.read_excel(file_path)
         
-        # Basic validation
-        if df.empty:
-            raise ValueError("Excel file is empty")
-
-        # If column names aren't 'ID' and 'Amount', try to detect them
-        if 'Amount' not in df.columns:
-            # Find the column that looks like amounts
-            numeric_cols = df.select_dtypes(include=['float64', 'int64']).columns
-            for col in numeric_cols:
-                if df[col].notna().any() and (df[col] > 0).any():
-                    df.rename(columns={col: 'Amount'}, inplace=True)
-                    break
-
-        if 'ID' not in df.columns:
-            # Use the first non-amount column as ID
-            non_amount_cols = [col for col in df.columns if col != 'Amount']
-            if non_amount_cols:
-                df.rename(columns={non_amount_cols[0]: 'ID'}, inplace=True)
-
-        # Clean amount values
-        df['Amount'] = df['Amount'].apply(lambda x: float(str(x).replace('$', '').replace(',', '')) if pd.notnull(x) else None)
+        # Remove any unnamed columns
+        df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
         
+        # Create Selection ID if not present
+        if 'Selection ID' not in df.columns:
+            df['Selection ID'] = range(1, len(df) + 1)
+        
+        # Clean and validate numeric columns
+        for col in df.columns:
+            if df[col].dtype == object:  # Only process string columns
+                try:
+                    # Remove currency symbols and commas
+                    cleaned = df[col].astype(str).replace('[\$,]', '', regex=True)
+                    # Try converting to float
+                    if cleaned.str.match(r'^-?\d*\.?\d*$').all():
+                        df[col] = pd.to_numeric(cleaned, errors='coerce')
+                except Exception as e:
+                    logger.debug(f"Column {col} not numeric: {e}")
+                    continue
+            
         logger.info(f"Loaded Excel with {len(df)} rows")
-        logger.debug(f"Sample data:\n{df.head()}")
         return df
         
     except Exception as e:
@@ -116,12 +105,12 @@ def validate_dataframe(df: pd.DataFrame, required_columns: List[str]) -> bool:
     """
     try:
         if df.empty:
-            log_error("DataFrame is empty")
+            logger.error("DataFrame is empty")
             return False
             
         missing_columns = set(required_columns) - set(df.columns)
         if missing_columns:
-            log_error(f"Missing required columns: {missing_columns}")
+            logger.error(f"Missing columns: {missing_columns}")
             return False
             
         return True
@@ -162,9 +151,7 @@ def cleanup_temp_files(temp_dir: Union[str, Path] = "temp") -> None:
     try:
         temp_path = Path(temp_dir)
         if temp_path.exists():
-            for file in temp_path.glob("*"):
-                file.unlink()
-            temp_path.rmdir()
+            shutil.rmtree(temp_path)
     except Exception as e:
         log_error(f"Error cleaning up temp files: {str(e)}")
 
@@ -178,6 +165,8 @@ def save_matches_to_excel(matches: List[Dict[str, Any]], output_path: Union[str,
         wb = openpyxl.Workbook()
         summary_sheet = wb.active
         summary_sheet.title = "Summary"
+        
+        # Set column widths
         summary_sheet.column_dimensions['A'].width = 30
         summary_sheet.column_dimensions['B'].width = 30
         
@@ -218,7 +207,7 @@ def save_matches_to_excel(matches: List[Dict[str, Any]], output_path: Union[str,
                 selection_data = match.get('Selection Data', {})
                 for key, value in selection_data.items():
                     ws.cell(row=current_row, column=1, value=key)
-                    ws.cell(row=current_row, column=2, value=str(value))
+                    ws.cell(row=current_row, column=2, value=str(value))  # Fix: Correct parentheses
                     current_row += 1
                 
                 # Add spacing
@@ -244,7 +233,7 @@ def save_matches_to_excel(matches: List[Dict[str, Any]], output_path: Union[str,
                 
                 current_row += 1
                 
-                # Add PDF images
+                # Add PDF images if available
                 matched_pages = match.get('Matched Pages', [])
                 if matched_pages:
                     cell = ws.cell(row=current_row, column=1, value="PDF Pages")
@@ -253,9 +242,9 @@ def save_matches_to_excel(matches: List[Dict[str, Any]], output_path: Union[str,
                     
                     for i, page_path in enumerate(matched_pages, 1):
                         try:
-                            resized_path = resize_pdf_image(page_path)
-                            if Path(resized_path).exists():
-                                img = OpenPyxlImage(resized_path)
+                            # Resize and add image
+                            if Path(page_path).exists():
+                                img = OpenPyxlImage(page_path)
                                 
                                 # Set image size in cells
                                 ws.row_dimensions[current_row].height = 300
@@ -268,9 +257,6 @@ def save_matches_to_excel(matches: List[Dict[str, Any]], output_path: Union[str,
                                 
                                 ws.cell(row=current_row, column=1, value=f"Page {i}")
                                 current_row += 22  # Space for image
-                                
-                                # Cleanup resized image
-                                Path(resized_path).unlink(missing_ok=True)
                                 
                         except Exception as e:
                             logger.error(f"Error adding image {page_path}: {e}")
@@ -455,20 +441,23 @@ class PDFHandler:
         """Convert PDF pages to images"""
         try:
             output_dir = ensure_output_directory()
-            file_path = CommonUtils.get_file_path(pdf_file)
+            file_path = self.get_file_path(pdf_file)
             
             # Create safe selection ID for filenames
             safe_id = str(selection_id).replace('.', '_').replace(' ', '_')
             
             # Convert PDF to images
-            images = convert_from_path(file_path, poppler_path=r'C:\Program Files\poppler\poppler-24.08.0\Library\bin')
+            images = convert_from_path(str(file_path), poppler_path=r'C:\Program Files\poppler\poppler-24.08.0\Library\bin')
             
             image_paths = []
             for i, image in enumerate(images):
                 image_path = output_dir / f"{safe_id}_page_{i+1}.png"
                 image.save(str(image_path.resolve()), "PNG")
                 logger.info(f"Saved PDF page {i+1} to: {image_path}")
-                image_paths.append(str(image_path.resolve()))
+                
+                # Create resized version for Excel
+                resized_path = resize_pdf_image(image_path)
+                image_paths.append(str(resized_path))
             
             return image_paths
         except Exception as e:
@@ -494,6 +483,17 @@ class PDFHandler:
         except Exception as e:
             logger.error(f"Error during cleanup: {e}")
 
+    def get_file_path(self, pdf_file: Union[str, Path, st.runtime.uploaded_file_manager.UploadedFile]) -> Path:
+        """Get filesystem path for PDF file"""
+        if isinstance(pdf_file, st.runtime.uploaded_file_manager.UploadedFile):
+            # Save uploaded file to temp directory
+            self.temp_dir.mkdir(parents=True, exist_ok=True)
+            temp_path = self.temp_dir / pdf_file.name
+            with open(temp_path, 'wb') as f:
+                f.write(pdf_file.getvalue())
+            return temp_path
+        return Path(pdf_file)
+
 class CommonUtils:
     """Shared utility functions used across modules"""
     @staticmethod
@@ -508,16 +508,55 @@ class CommonUtils:
 
     @staticmethod
     def normalize_amount(amount: Union[str, float, Decimal]) -> Decimal:
+        """
+        Normalize financial amounts into a consistent decimal format.
+        
+        Args:
+            amount: The amount to normalize, can be string ("$1,234.56"), float (1234.56), or Decimal
+            
+        Returns:
+            Decimal: Normalized amount with 2 decimal places
+            
+        Examples:
+            >>> normalize_amount("$1,234.56")
+            Decimal('1234.56')
+            >>> normalize_amount(1234.56)
+            Decimal('1234.56')
+            >>> normalize_amount("1,234")
+            Decimal('1234.00')
+            >>> normalize_amount("invalid")
+            Decimal('0.00')
+        """
         try:
-            if pd.isna(amount):
-                return Decimal('0')
-            if isinstance(amount, str):
-                cleaned = ''.join(c for c in amount if c.isdigit() or c in '.-')
-                amount = float(cleaned)
-            return Decimal(str(float(amount))).quantize(Decimal('0.01'))
-        except (InvalidOperation, ValueError) as e:
-            log_error(f"Error normalizing amount {amount}: {str(e)}")
-            return Decimal('0')
+            # Handle None or empty input
+            if amount is None or (isinstance(amount, str) and not amount.strip()):
+                logger.debug("Empty or None amount received")
+                return Decimal('0.00')
+
+            # Convert to string if float or Decimal
+            if isinstance(amount, (float, Decimal)):
+                amount_str = str(amount)
+            else:
+                amount_str = str(amount).strip()
+
+            # Remove currency symbols, commas, and spaces
+            cleaned = amount_str.replace('$', '').replace(',', '').replace(' ', '')
+
+            # Convert to Decimal and quantize to 2 decimal places
+            result = Decimal(cleaned).quantize(Decimal('0.01'))
+
+            # Validate result is not negative
+            if result < 0:
+                logger.warning(f"Negative amount normalized: {result}")
+
+            return result
+
+        except (InvalidOperation, ValueError, TypeError) as e:
+            logger.error(f"Error normalizing amount '{amount}': {str(e)}")
+            return Decimal('0.00')
+        except Exception as e:
+            logger.error(f"Unexpected error normalizing amount '{amount}': {str(e)}")
+            return Decimal('0.00')
 
     @staticmethod
     def get_file_path(file: Union[str, Path, st.runtime.uploaded_file_manager.UploadedFile]) -> Path:
@@ -529,7 +568,63 @@ class CommonUtils:
 
     @staticmethod
     def log_error(message: str, exception: Optional[Exception] = None) -> None:
-        """Centralized error logging"""
+        """Log error message with optional exception details"""
+        logger = logging.getLogger(__name__)
         logger.error(message)
         if exception:
             logger.error(f"Exception details: {str(exception)}", exc_info=True)
+
+def create_selection_folders(selections: List[str]) -> Dict[str, Path]:
+    """Create folders for each selection"""
+    base_path = Path(OUTPUT_FOLDER)
+    base_path.mkdir(exist_ok=True)
+    
+    folders = {}
+    for selection_id in selections:
+        folder = base_path / str(selection_id)
+        folder.mkdir(exist_ok=True)
+        folders[selection_id] = folder
+    
+    return folders
+
+def create_support_summary(matches: List[Dict], output_path: Path) -> None:
+    """Create Excel summary with support categories"""
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.title = "Support Summary"
+    
+    # Write headers
+    for col, header in enumerate(EXCEL_HEADERS, 1):
+        ws.cell(row=1, column=col, value=header)
+    
+    # Write data rows
+    for row, match in enumerate(matches, 2):
+        selection_data = match['Selection Data']
+        ws.cell(row=row, column=1, value=match['Selection ID'])
+        ws.cell(row=row, column=2, value=selection_data.get('Amount', ''))
+        ws.cell(row=row, column=3, value=selection_data.get('Description', ''))
+        
+        # Mark support categories
+        pdf_type = match.get('PDF Type', '')
+        if pdf_type:
+            col = EXCEL_HEADERS.index(pdf_type) + 1
+            ws.cell(row=row, column=col, value='x')
+    
+    wb.save(output_path)
+
+def create_preview_table(matches: List[Dict], output_path: Path) -> pd.DataFrame:
+    """Create preview table showing support status"""
+    data = []
+    for match in matches:
+        row = {
+            'Selection ID': match['Selection ID'],
+            'Amount': match['Selection Amount']
+        }
+        # Add column for each category
+        for category in SUPPORT_CATEGORIES:
+            row[category] = 'x' if match.get('PDF Type') == category else ''
+        data.append(row)
+    
+    df = pd.DataFrame(data)
+    df.to_excel(output_path, index=False)
+    return df

@@ -20,6 +20,12 @@ class TestMatcherFunctions(unittest.TestCase):
         result = extract_primary_amount(text)
         self.assertEqual(result, expected)
 
+    def test_extract_primary_amount(self):
+        text = "Invoice total: $1,234.56\nAmount due: $789.00"
+        expected = 1234.56
+        result = extract_primary_amount(text)
+        self.assertEqual(result, expected)
+
     @patch('matcher.extract_text_from_pdf')
     @patch('matcher.extract_primary_amount')
     def test_match_documents(self, mock_extract_primary_amount, mock_extract_text_from_pdf):
@@ -36,6 +42,15 @@ class TestMatcherFunctions(unittest.TestCase):
         results = match_documents(df, 'ID', 'Amount', pdf_files)
         self.assertIsInstance(results, list)
         self.assertEqual(len(results), 2)
+
+    @patch('matcher.extract_text_from_pdf')
+    @patch('matcher.extract_primary_amount')
+    def test_save_matches_to_excel(self, mock_extract_primary_amount, mock_extract_text_from_pdf):
+        mock_extract_text_from_pdf.return_value = "Total amount: $1,234.56"
+        mock_extract_primary_amount.return_value = 1234.56
+        matches = [{'Selection ID': '1', 'Selection Amount': 1234.56, 'PDF Name': 'test.pdf', 'PDF Amount': 1234.56}]
+        save_matches_to_excel(matches, 'output.xlsx', {'User': 'Test'})
+        # Add assertions to verify the Excel file content if needed
 
     def test_save_matches_to_excel(self):
         matches = [

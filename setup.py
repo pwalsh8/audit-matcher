@@ -71,7 +71,8 @@ class CommonUtils:
         'pdfplumber',
         'openpyxl',
         'python-dotenv',
-        'PyPDF2'  # Add PyPDF2 to the requirements
+        'PyPDF2',
+        'pdfplumber'  # Add pdfplumber to the requirements
     ]
 
     with open('requirements.txt', 'w') as f:
@@ -91,31 +92,39 @@ def setup_dependencies():
 
 def create_virtual_environment():
     """Create and activate virtual environment"""
-    if not Path('venv').exists():
-        subprocess.run([sys.executable, '-m', 'venv', 'venv'], check=True)
+    project_dir = Path.cwd().resolve()
+    venv_path = project_dir / 'venv'
+    
+    if not venv_path.exists():
+        subprocess.run([sys.executable, '-m', 'venv', str(venv_path)], check=True)
 
-    # Install requirements
+    # Get the correct pip path
     if os.name == 'nt':  # Windows
-        pip_path = 'venv\\Scripts\\pip'
+        pip_path = venv_path / 'Scripts' / 'pip.exe'
     else:  # Unix/Mac
-        pip_path = 'venv/bin/pip'
+        pip_path = venv_path / 'bin' / 'pip'
 
-    subprocess.run([pip_path, 'install', '-r', 'requirements.txt'], check=True)
+    # Install requirements using absolute paths
+    requirements_path = project_dir / 'requirements.txt'
+    subprocess.run([str(pip_path), 'install', '-r', str(requirements_path)], check=True)
 
 def main():
     """Main setup function"""
     print("Setting up Audit Matcher project...")
+    project_dir = Path.cwd().resolve()
+    
     create_project_structure()
     setup_dependencies()
     create_virtual_environment()
+    
     print("\nSetup complete! To start the application:")
     print("1. Activate virtual environment:")
     if os.name == 'nt':  # Windows
-        print("   .\\venv\\Scripts\\activate")
+        print(f"   {project_dir}\\venv\\Scripts\\activate")
     else:  # Unix/Mac
-        print("   source venv/bin/activate")
+        print(f"   source {project_dir}/venv/bin/activate")
     print("2. Run the application:")
-    print("   streamlit run src/main.py")
+    print("   python -m streamlit run src/main.py")
 
 if __name__ == "__main__":
     main()

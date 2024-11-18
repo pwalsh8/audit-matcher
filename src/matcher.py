@@ -2,14 +2,21 @@ import pdfplumber
 import re
 from typing import List, Dict, Any, Union, Optional
 import logging
-from decimal import Decimal, InvalidOperation
+from decimal import Decimal
 from pathlib import Path
 import pandas as pd
 import streamlit as st
 from pdf2image import convert_from_path
-import os
 import tempfile
-from utils import CommonUtils, ensure_output_directory, PDFHandler
+from utils import CommonUtils, ensure_output_directory, PDFHandler, log_error
+
+# Setup logging
+logger = logging.getLogger(__name__)
+
+# Remove direct imports and use CommonUtils
+normalize_amount = CommonUtils.normalize_amount
+format_currency = CommonUtils.format_currency
+get_file_path = CommonUtils.get_file_path
 
 class TextMatcher:
     """Advanced text matching utility with flexible string matching"""
@@ -49,8 +56,6 @@ class TextMatcher:
 
 # Initialize text matcher
 fuzz = TextMatcher()
-
-logger = logging.getLogger(__name__)
 
 def extract_primary_amount(text: str) -> Optional[float]:
     """
@@ -153,6 +158,10 @@ def convert_pdf_to_images(pdf_file: Union[str, Path, st.runtime.uploaded_file_ma
     
     try:
         file_path = pdf_handler.get_file_path(pdf_file)
+        if isinstance(pdf_file, st.runtime.uploaded_file_manager.UploadedFile):
+            with tempfile.NamedTemporaryFile(delete=False, suffix='.pdf') as tmp:
+                tmp.write(pdf_file.getbuffer())
+                file_path = Path(tmp.name)
         images = convert_from_path(file_path, poppler_path=r'C:\Program Files\poppler\poppler-24.08.0\Library\bin')
 
         image_paths = []
@@ -270,97 +279,68 @@ def match_entries(selections: List[Dict], pdf_entries: List[Dict], threshold: fl
     return matches
 
 def match_documents(df: pd.DataFrame, unique_id_column: str, amount_column: str, 
-                   pdf_files: List[Union[str, Path, st.runtime.uploaded_file_manager.UploadedFile]], 
-                   threshold: float = 0.5) -> List[Dict[str, Any]]:
+                   pdf_files: List[Union[str, Path, st.runtime.uploaded_file_manager.UploadedFile]]) -> List[Dict[str, Any]]:
     """Match amounts from Excel selections with amounts found in PDFs."""
     logger.debug(f"Processing {len(df)} selections and {len(pdf_files)} PDFs")
     
-    # Prepare selections data
-    selections = []
-    for _, row in df.iterrows():
-        try:
-            # Clean and normalize amount
-            amount_str = str(row[amount_column]).replace('$', '').replace(',', '').strip()
-            amount = float(amount_str)
-            
-            selections.append({
-                'id': str(row[unique_id_column]),
-                'amount': amount,
-                'raw_data': row.to_dict()
-            })
-            logger.debug(f"Processed selection - ID: {row[unique_id_column]}, Amount: {amount}")
-        except Exception as e:
-            logger.error(f"Error processing selection {row[unique_id_column]}: {e}")
-            continue
-
-    # Process PDFs and extract amounts
-    pdf_entries = []
-    output_dir = ensure_output_directory()
-    
-    for pdf_file in pdf_files:
-        try:
-            text = extract_text_from_pdf(pdf_file)
-            amounts = extract_amounts_from_text(text)
-            logger.debug(f"Found amounts in {pdf_file.name}: {amounts}")
-            
-            # Store each amount found in the PDF
-            for amount in amounts:
-                pdf_entries.append({
-                    'file': pdf_file,
-                    'amount': amount,
-                    'text': text,
-                    'pdf_name': pdf_file.name,
-                })
-        except Exception as e:
-            logger.error(f"Error processing PDF {pdf_file.name}: {e}")
-            continue
-
-    # Match selections with PDFs
-    all_matches = []
-    
-    # Use the output directory consistently
-    output_dir = ensure_output_directory()
-    
-    for selection in selections:
-        selection_matches = []
+    try:
+        # Ensure Selection ID column exists
+        if 'Selection ID' not in df.columns:
+            df['Selection ID'] = df.index.map(lambda x: f"{x+1}.0")
         
-        for pdf_entry in pdf_entries:
+        # Process selections
+        selections = []
+        for _, row in df.iterrows():
             try:
-                # Compare amounts with small tolerance
-                amount_diff = abs(selection['amount'] - pdf_entry['amount'])
-                if amount_diff < 0.01:  # 1 cent tolerance
-                    # Generate safe ID for filenames
-                    safe_id = str(selection['id']).replace('.', '_').replace(' ', '_')
-                    
-                    # Convert PDF to images and ensure paths are absolute
-                    image_paths = convert_pdf_to_images(pdf_entry['file'], safe_id)
-                    image_paths = [str(Path(p).resolve()) for p in image_paths]
-                    
-                    match_info = {
-                        'Selection ID': safe_id,
-                        'Selection Data': selection['raw_data'],
-                        'Selection Amount': format_currency(selection['amount']),
-                        'PDF Name': pdf_entry['pdf_name'],
-                        'PDF Amount': format_currency(pdf_entry['amount']),
-                        'PDF Text': pdf_entry['text'],
-                        'Match Type': 'Exact',
-                        'Match Score': 100 - (amount_diff * 100),
-                        'Matched Pages': image_paths
-                    }
-                    selection_matches.append(match_info)
-                    logger.info(f"Found match for selection {safe_id}")
+                amount_str = str(row[amount_column]).replace('$', '').replace(',', '').strip()
+                amount = float(amount_str)
+                selections.append({
+                    'Selection ID': row['Selection ID'],
+                    'id': str(row[unique_id_column]),
+                    'amount': amount,
+                    'raw_data': row.to_dict()
+                })
             except Exception as e:
-                logger.error(f"Error matching selection {selection['id']}: {e}")
+                log_error(f"Error processing selection {row[unique_id_column]}", e)
                 continue
+
+        # Process PDFs and find matches
+        matches = []
+        pdf_handler = PDFHandler()
         
-        # Add all matches for this selection
-        if selection_matches:
-            all_matches.extend(selection_matches)
-        else:
-            logger.warning(f"No matches found for selection {selection['id']}")
-    
-    logger.info(f"Found {len(all_matches)} total matches")
-    return all_matches
+        for selection in selections:
+            for pdf_file in pdf_files:
+                try:
+                    text = pdf_handler.extract_text(pdf_file)
+                    amount = extract_primary_amount(text)
+                    
+                    if amount and abs(amount - selection['amount']) < 0.01:
+                        image_paths = pdf_handler.convert_to_images(pdf_file, selection['id'])
+                        if image_paths:
+                            logger.info(f"Found match for selection {selection['id']}")
+                            matches.append({
+                                'Selection ID': selection['id'],
+                                'Selection Data': selection['raw_data'],
+                                'Selection Amount': format_currency(selection['amount']),
+                                'PDF Name': pdf_file.name if hasattr(pdf_file, 'name') else str(pdf_file),
+                                'PDF Amount': format_currency(amount),
+                                'PDF Text': text,
+                                'Match Type': 'Exact',
+                                'Match Score': 100,
+                                'Matched Pages': image_paths,
+                                'skipped': False
+                            })
+                            break
+                except Exception as e:
+                    log_error(f"Error processing PDF {getattr(pdf_file, 'name', pdf_file)}", e)
+                    continue
+
+        logger.info(f"Found {len(matches)} total matches")
+        return matches
+        
+    except Exception as e:
+        log_error("Error in match_documents", e)
+        return []
 
 def verify_match_accuracy(match: Dict[str, Any]) -> float:
     """
@@ -460,29 +440,58 @@ def _advance_match(state: Dict):
     state['current_index'] += 1
     if state['current_index'] >= len(state['matches']):
         state['completed'] = True
-    st.experimental_rerun()
+    st.rerun()
 
 def process_files(df: pd.DataFrame, unique_id_column: str, amount_column: str, pdf_files: List) -> Dict[str, Any]:
     """Process files and find matches"""
     try:
-        logger.debug(f"Processing {len(pdf_files)} PDFs against {len(df)} selections")
-        
         if df.empty:
             raise ValueError("DataFrame is empty")
             
-        # Convert amounts to numeric and validate
+        # Convert amounts to numeric, handling currency symbols
         try:
-            df[amount_column] = pd.to_numeric(df[amount_column], errors='coerce')
-            if df[amount_column].isna().any():
-                invalid_rows = df[df[amount_column].isna()].index.tolist()
-                raise ValueError(f"Invalid amounts found in rows: {invalid_rows}")
+            df[amount_column] = df[amount_column].replace('[\$,]', '', regex=True).astype(float)
         except Exception as e:
-            raise ValueError(f"Error processing amounts: {str(e)}")
+            logger.error(f"Error converting amounts: {e}")
+            # Find rows with invalid amounts
+            invalid_rows = df[pd.to_numeric(df[amount_column].replace('[\$,]', '', regex=True), errors='coerce').isna()].index.tolist()
+            raise ValueError(f"Invalid amounts found in rows: {invalid_rows}")
 
-        # Find matches
-        matches = match_documents(df, unique_id_column, amount_column, pdf_files)
-        logger.info(f"Found {len(matches)} potential matches")
+        # Match documents with safe filename handling
+        matches = []
+        for _, row in df.iterrows():
+            try:
+                selection_amount = float(row[amount_column])
+                
+                for pdf_file in pdf_files:
+                    # Safe filename handling
+                    filename = (pdf_file.name if hasattr(pdf_file, 'name') 
+                              else Path(pdf_file).name if isinstance(pdf_file, (str, Path))
+                              else str(pdf_file))
+                    
+                    temp_path = get_file_path(pdf_file)
+                    text = extract_text_from_pdf(temp_path)
+                    pdf_amount = extract_primary_amount(text)
+                    
+                    if pdf_amount and abs(pdf_amount - selection_amount) < 0.01:
+                        matches.append({
+                            "Selection ID": str(row[unique_id_column]),
+                            "Selection Amount": format_currency(selection_amount),
+                            "PDF Name": filename,
+                            "PDF Amount": format_currency(pdf_amount),
+                            "Match Type": "Exact" if pdf_amount == selection_amount else "Close",
+                            "PDF Path": str(temp_path)  # Add PDF path for later processing
+                        })
+                        
+                    # Cleanup temp file if needed
+                    if isinstance(pdf_file, st.runtime.uploaded_file_manager.UploadedFile):
+                        Path(temp_path).unlink(missing_ok=True)
+            
+            except Exception as e:
+                logger.error(f"Error processing row {row[unique_id_column]}: {str(e)}")
+                continue
         
+        logger.info(f"Found {len(matches)} potential matches")
         return {
             "matches": matches,
             "total": len(matches),
@@ -490,14 +499,8 @@ def process_files(df: pd.DataFrame, unique_id_column: str, amount_column: str, p
         }
         
     except Exception as e:
-        logger.error(f"Error processing files: {str(e)}")
+        log_error("Error processing files", e)
         return {"error": str(e), "status": "error"}
-
-# Replace direct function definitions with CommonUtils
-normalize_amount = CommonUtils.normalize_amount
-get_file_path = CommonUtils.get_file_path
-format_currency = CommonUtils.format_currency
-log_error = CommonUtils.log_error
 
 __all__ = [
     'extract_amounts_from_text',
@@ -506,5 +509,3 @@ __all__ = [
     'match_documents',
     'process_files'
 ]
-
-# ...existing code...
